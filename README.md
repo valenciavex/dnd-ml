@@ -4,6 +4,8 @@ unlike ennui no splash screen promt direct to dashbaord adn on toolbas have the 
 
 further categorization network progress visualization educaton all decomposed to options 
 
+use flat theme so that there can be simple global variables in sass liek ```[back ground, foregroud primary, secondary, neutral, active]``` easier to maintain and change 
+
 flat colors contrast consistent and code base smaller and acessibility compliance easier
 
 contending for side bar and open collapse to abstract out to topbar and entire side dock is selection subsectoins ennui to a degree but two side bars and icon crutch so reduce deadspace and floating palatte on the grid for stuff hover open and select stuff or side bar space hmm think about it and drag and drop to canvas prompt hover for purspose side side bar but mouse travel less so keyboard navigate simplest good and ? help on top smallest section approachable remoce and undesigns as much as you can
