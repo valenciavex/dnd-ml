@@ -4,6 +4,8 @@ unlike ennui no splash screen promt direct to dashbaord adn on toolbas have the 
 
 grid snapping make shapes a bit smaller
 
+grid and mac clean up feature and auto that and no breaking exzess too? hmm dunno
+
 not jsut minst loaded in but local directory as well to use it eh
 
 figma
