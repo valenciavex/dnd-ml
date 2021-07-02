@@ -2,7 +2,7 @@ Design Choice
 
 unlike ennui no splash screen promt direct to dashbaord adn on toolbas have the learn 
 
-contending for side bar and open collapse to abstract out to topbar and entire side dock is selection subsectoins ennui to a degree but two side bars and icon crutch so reduce deadspace and floating palatte on the grid for stuff hover open and select stuff or side bar space hmm think about it and drag and drop to canvas prompt
+contending for side bar and open collapse to abstract out to topbar and entire side dock is selection subsectoins ennui to a degree but two side bars and icon crutch so reduce deadspace and floating palatte on the grid for stuff hover open and select stuff or side bar space hmm think about it and drag and drop to canvas prompt hover for purspose side side bar but mouse travel less so keyboard navigate simplest good and ? help on top smallest section approachable remoce and undesigns as much as you can
 
 grid snapping make shapes a bit smaller
 
