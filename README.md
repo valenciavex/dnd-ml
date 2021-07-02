@@ -35,7 +35,7 @@ once specification becomes clear will implement with figma variants and then dir
 
 centered around customisability (not UI, ML stuff) no option paralysis
 
-dark mode trusted palatte dracula-theme
+dark mode trusted palatte dracula-theme?
 
 
 <!-- contending for side bar and open collapse to abstract out to topbar and entire side dock is selection subsectoins ennui to a degree but two side bars and icon crutch so reduce deadspace and floating palatte on the grid for stuff hover open and select stuff or side bar space hmm think about it and drag and drop to canvas prompt hover for purspose side side bar but mouse travel less so keyboard navigate simplest good and ? help on top smallest section approachable remoce and undesigns as much as you can
