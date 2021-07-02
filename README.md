@@ -1,5 +1,11 @@
 Design Choice
 
+unlike ennui no splash screen promt direct to dashbaord adn on toolbas have the learn 
+
+grid snapping make shapes a bit smaller
+
+not jsut minst loaded in but local directory as well to use it eh
+
 figma
 webflow
 front end
