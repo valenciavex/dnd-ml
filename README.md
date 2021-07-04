@@ -3,6 +3,7 @@
 ## Color Palette
 
 likght theme, dark theme, language vet
+all compoents figma variants in code and all json too for developer chinguun and map his job too eh
 
 Palette      | Hex       | RGB           | HSL             | ![Color Picker Boxes](https://draculatheme.com/static/img/color-boxes/eyedropper.png)
 ---          | ---       | ---           | ---             | ---
