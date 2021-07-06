@@ -5,6 +5,8 @@
 likght theme, dark theme, language vet
 all compoents figma variants in code and all json too for developer chinguun and map his job too eh
 
+navigation top bar and h ref dunno there is svg ids nad side changes very well done 
+
 Palette      | Hex       | RGB           | HSL             | ![Color Picker Boxes](https://draculatheme.com/static/img/color-boxes/eyedropper.png)
 ---          | ---       | ---           | ---             | ---
 Background   | `#282a36` | `40 42 54`    | `231° 15% 18%`  | ![Background Color](https://draculatheme.com/static/img/color-boxes/background.png)
