@@ -2,10 +2,12 @@
 
 ## Color Palette
 
-likght theme, dark theme, language vet
-all compoents figma variants in code and all json too for developer chinguun and map his job too eh
+
+all components figma variants in code and all json too for developer 
 
 navigation top bar and h ref dunno there is svg ids nad side changes very well done 
+
+### UI color scheme 
 
 Palette      | Light     | Dark          | 
 ---          | ---       | ---           | 
