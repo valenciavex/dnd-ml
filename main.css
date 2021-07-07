@@ -1,0 +1,59 @@
+/* Add a black background color to the top navigation */
+body {
+    background-color: #CFDEF3;
+  }
+
+@font-face { font-family: Josefin; src: url('JosefinSans-Bold.TTF'); }
+
+.topnav {
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #696E74;
+    text-align: center;
+    padding: 15px 15px 10px;
+    text-decoration: none;
+    font-family: Josefin;
+    font-size: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #B1D6F7;
+    border-radius: 8px;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #2CA6FF;
+    color: #FFFFFF;
+  }
+
+  .collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
