@@ -7,6 +7,8 @@ all components figma variants in code and all json too for developer
 
 navigation top bar and h ref dunno there is svg ids nad side changes very well done 
 
+contrast compliant shape colors for both schemes and the best one of them all both black and white liek mouse pointer and find it regardless of back ground that is the way so no color chaning and wasted resrouces on that
+
 ### UI color scheme 
 
 Palette      | Light     | Dark          | 
