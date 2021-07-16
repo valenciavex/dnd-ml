@@ -7,6 +7,8 @@ all components figma variants in code and all json too for developer
 
 navigation top bar and h ref dunno there is svg ids nad side changes very well done 
 
+every svg has a stroke so that on click it can be changed to blue and it is defined before does not eat into the shape or bloat it
+
 clear expectation of selection with the color being blue even for the svg shapes
 
 contrast compliant shape colors for both schemes and the best one of them all both black and white liek mouse pointer and find it regardless of back ground that is the way so no color chaning and wasted resrouces on that
