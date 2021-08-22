@@ -1,7 +1,7 @@
 ## Acknowledgements: 
 * The user interface and drag and drop feature is _heavily_ inspried by ENNUI - Elegant Neural Network User Interface 
-  - Website: math.mit.edu/ennui
-  - Github: github.com/martinjm97/ENNUI
+  - Website: www.math.mit.edu/ennui
+  - Github: www.github.com/martinjm97/ENNUI
 * The command line feature is an attempt at trying to replicate the utility the website www.monkeytype.com offers. Similar functionality of the command palatte is offered in Visual Studio Code, Obsidian.md, etc...
 
 ## Color Palette
