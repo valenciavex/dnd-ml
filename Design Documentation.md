@@ -20,11 +20,11 @@ contrast compliant shape colors for both schemes and the best one of them all bo
 ### UI color scheme 
 
 Palette      | Light     | Dark          | 
----          | ---       | ---           | 
+:---:        | :---:     | :---:         | 
 Background   | `#CFDEF3` | `#282A36`     |
 Foreground   | `#FFFFFF` | `#7083BF`     |
 Elements     | `#383838` | `#CBD7FF`     |
-Hover        | `#2CA6FF` | `#2CA6FF` |
+Hover        | `#2CA6FF` | `#2CA6FF`     |
 
 Comment      | `#6272a4` | `98 114 164`  |
 Cyan         | `#8be9fd` | `139 233 253` |
