@@ -4,6 +4,8 @@
   - Github: https://github.com/martinjm97/ENNUI
 * The command line feature is an attempt at replicating the utility the website www.monkeytype.com offers. Similar functionality of the command palatte is offered in Visual Studio Code, Obsidian.md, Chrome Dev. Tools, Figma etc...
 
+==color tagging isntead of redundatn bloat of labels adn accuracy over each image of csv that would not be the best eh adn input vliadation adn input type adn exception handlign adn trouble shooting with that and color tagggin for repsonsive getting smaller adn clamp too and blue and green adn red or violet or other primary color liek yellow or organe hmm think about that intstead of red and toggles on top woudl be great for exploring that==
+
 ## Color Palette
 
 
