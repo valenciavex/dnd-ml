@@ -1,6 +1,6 @@
-#### Drag and Drop Machine Learning Web Application
+# Drag and Drop Machine Learning Web Application
 
-Working under Cooper Sigrist at the Biologically Inspired Neural and Dynamical Systems (BINDS) Lab at Umass Amherst.<br>
+Working under Cooper Sigrist at the Biologically Inspired Neural and Dynamical Systems (BINDS) Lab at Umass Amherst.<br> <br>
 DnD-ML is a highly accessible research and educational GUI tool to build your ML models.
 
 
