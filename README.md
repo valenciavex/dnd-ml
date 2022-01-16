@@ -20,6 +20,8 @@ We have graphical components for the following: <br>
   - ReLU
   - Sigmoid
   - Tanh
+- Links:
+  - Cubic Bezier curves
 
 ## Acknowledgements: 
 * The user interface and drag and drop feature is _inspired_ by ENNUI - Elegant Neural Network User Interface 
