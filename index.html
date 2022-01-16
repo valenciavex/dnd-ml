@@ -1,47 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="main.css" />
     <script defer src="app.js"></script>
     <title>DnDML</title>
   </head>
-  
+
   <body class="light">
-    
     <main class="grid-body">
-
       <header id="global-header">
-
         <nav class="nav">
           <a class="active" href="#home">Model</a>
           <a href="Dataset.html">Dataset</a>
-          <a href="#Training">Training</a>
+          <a href="datatest.html">Training</a>
           <a href="#Testing">Testing</a>
           <a href="#Tuning">Tuning</a>
         </nav>
-  
-        <img id="theme-toggle" src="Assets/Light.svg" alt="UI theme toggle button"/>
-  
+
+        <img
+          onclick="toggleTheme()"
+          id="theme-toggle"
+          src="Assets/Light.svg"
+          alt="Theme toggle switch"
+        />
+
         <button id="train">
-          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="run"
+          <span class = "icon">
+          <svg
+            width="14"
+            height="15"
+            viewBox="0 0 14 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="icon--fill"
               d="M0.5 7.5V2.03238C0.5 0.477792 2.19594 -0.482435 3.52899 0.317395L12.6417 5.78501C13.9364 6.56182 13.9364 8.43818 12.6417 9.21499L3.52899 14.6826C2.19594 15.4824 0.5 14.5222 0.5 12.9676V7.5Z"
-              fill="#254671"/>
+            />
           </svg>
+        </span>
           Train
         </button>
-  
       </header>
-      <ul class="page-options">
-        <li>
-          Prebuilt
+      <div class="page-options">
+        <div>
+          <span class="icon"
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="icon-fill" d="M9 0H6C5.44772 0 5 0.447715 5 1V4C5 4.55228 4.55228 5 4 5H1C0.447715 5 0 5.44771 0 6V9C0 9.55228 0.447715 10 1 10L4 10C4.55228 10 5 10.4477 5 11V14C5 14.5523 5.44772 15 6 15H9C9.55229 15 10 14.5523 10 14V11C10 10.4477 10.4477 10 11 10H14C14.5523 10 15 9.55229 15 9V6C15 5.44772 14.5523 5 14 5H11C10.4477 5 10 4.55228 10 4V1C10 0.447715 9.55229 0 9 0Z"/>
+          </svg>
+          Create</div>
+        </span>
+        <div>
+          <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class = "icon--fill" d="M9.99985 17.0836V2C9.99985 0.895431 9.10442 0 7.99985 0H7.13008H2.86977H2C0.89543 0 0 0.895431 0 2V17.0836C0 18.036 1.23142 18.4713 1.85352 17.7502C2.77383 16.6835 3.86903 15.4786 4.99992 14.3541C6.13082 15.4786 7.22602 16.6835 8.14633 17.7502C8.76842 18.4713 9.99985 18.036 9.99985 17.0836Z"/>
+</svg>
+          Saved
           <ul class="option">
             <li class="options">
-              <input type="radio" name="Model" id="prebuilt-module" checked/>
+              <input type="radio" name="Model" id="prebuilt-module" checked />
               <label for="prebuilt-module" class="label-inline">Modules</label>
             </li>
             <li class="options">
@@ -51,9 +70,14 @@
               >
             </li>
           </ul>
-        </li>
-        <li>
-          Custom
+        </div>
+        <div>
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.9208 12.821L20.2201 7.11103C20.664 6.83849 20.664 6.06061 20.2201 5.78807L10.9208 0.0780774C10.7513 -0.0260258 10.5517 -0.0260258 10.3822 0.0780774L1.0829 5.78807C0.639034 6.06061 0.639033 6.83849 1.0829 7.11103L10.3822 12.821C10.5517 12.9251 10.7513 12.9251 10.9208 12.821Z" fill="#254671"/>
+            <path d="M0.690458 8.87863L1.37937 10.0131C1.46183 10.1489 1.57546 10.2631 1.71085 10.3462L10.6515 15.836L19.5921 10.3462C19.7275 10.2631 19.8412 10.1489 19.9236 10.0131L20.6125 8.87863C21.114 9.18656 21.303 9.73121 21.303 10.1792C21.303 10.6273 21.114 11.1719 20.6125 11.4799L11.3133 17.1898C10.903 17.4418 10.4 17.4418 9.98973 17.1898L0.690457 11.4799C0.188967 11.1719 0 10.6273 0 10.1792C0 9.73121 0.188968 9.18656 0.690458 8.87863Z" fill="#254671"/>
+            <path d="M0.690458 13L1.37937 14.1345C1.46183 14.2702 1.57546 14.3844 1.71085 14.4676L10.6515 19.9574L19.5921 14.4676C19.7275 14.3844 19.8412 14.2702 19.9236 14.1345L20.6125 13C21.114 13.3079 21.303 13.8526 21.303 14.3006C21.303 14.7486 21.114 15.2933 20.6125 15.6012L11.3133 21.3112C10.903 21.5631 10.4 21.5631 9.98973 21.3112L0.690457 15.6012C0.188967 15.2933 0 14.7486 0 14.3006C0 13.8526 0.188968 13.3079 0.690458 13Z" fill="#254671"/>
+            </svg>
+          Templates
           <ul class="option">
             <li class="options">
               <input type="radio" name="Model" id="my-module" />
@@ -66,108 +90,273 @@
               >
             </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
 
       <div class="svg-assets">
-        <img id="Tanh" src="Assets/Activation/tanh.svg" />
-        <img id="Sigmoid" src="Assets/Activation/sigmoid.svg" />
-        <img id="RelU" src="Assets/Activation/relu.svg" />
-        <img id="Concatenate" src="Assets/Layer/Concatenate.svg" />
-        <img id="Convolution" src="Assets/Layer/Convolution.svg" />
-        
-        <g>
-          <svg
-          class = "svg-item"
-            width="28"
-            height="55"
-            viewBox="0 0 28 55"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path class = "stroke"
-              d="M26 13.75V27.5V41.25C26 44.6022 23.7186 47.5242 20.4665 48.3372L1.5 53.0788V48.125V41.25V27.5V13.75V6.875V1.92116L20.4665 6.66278C23.7186 7.4758 26 10.3978 26 13.75Z"
-              fill="#F4F9FF"
-              stroke="black"
-              stroke-width="3"
-            />
-            <path
-              d="M11.2507 21.8667C11.2507 21.388 11.6387 21 12.1173 21H14.8827C15.3613 21 15.7493 21.388 15.7493 21.8667V24.0924C15.7493 24.8103 16.3313 25.3924 17.0493 25.3924H19.1333C19.612 25.3924 20 25.7804 20 26.259V28.8118C20 29.2905 19.612 29.6785 19.1333 29.6785H17.0493C16.3313 29.6785 15.7493 30.2605 15.7493 30.9785V33.1333C15.7493 33.612 15.3613 34 14.8827 34H12.1173C11.6387 34 11.2507 33.612 11.2507 33.1333V30.9785C11.2507 30.2605 10.6687 29.6785 9.95068 29.6785H7.86667C7.38802 29.6785 7 29.2905 7 28.8118V26.259C7 25.7804 7.38802 25.3924 7.86667 25.3924H9.95068C10.6687 25.3924 11.2507 24.8103 11.2507 24.0924V21.8667Z"
-              fill="black"
-            />
-          </svg>
-        </g>
-        
-          <svg
-            width="38"
-            height="66"
-            viewBox="0 0 38 66"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M36.0714 21.8294V32.875V43.9206C36.0714 48.0961 33.7123 51.9132 29.9776 53.7806L18.1149 59.7119L10.555 63.4919C9.82343 63.8577 8.96229 63.8577 8.23069 63.4919L1.5 60.1265V51.6607V32.875V14.0893V5.62348L8.23068 2.25814C8.96229 1.89234 9.82343 1.89234 10.555 2.25814L18.1149 6.03807L29.9776 11.9694C33.7123 13.8368 36.0714 17.6539 36.0714 21.8294ZM1.42605 60.0895C1.42614 60.0896 1.42624 60.0896 1.42633 60.0897L1.42606 60.0896L1.36623 60.2092L1.42605 60.0895Z"
-              fill="#F4F9FF"
-              stroke="black"
-              stroke-width="3"
-            />
-            <path
-              d="M7.35659 16.1677C6.45327 16.7343 6.45363 18.0597 7.35726 18.6258L14.9775 23.3998C15.9341 23.9991 17.1716 23.3057 17.1716 22.1705V12.6167C17.1716 11.4811 15.9334 10.7878 14.9769 11.3878L7.35659 16.1677Z"
-              fill="#C6B7EC"
-            />
-            <path
-              d="M15.5878 22.4257L7.96751 17.6517C7.7826 17.5358 7.78251 17.2574 7.96738 17.1414L15.5877 12.3616C15.765 12.2504 16.0222 12.3685 16.0222 12.6167V22.1705C16.0222 22.4186 15.7651 22.5368 15.5878 22.4257Z"
-              stroke="black"
-              stroke-opacity="0.2"
-              stroke-width="2.29892"
-            />
-            <path
-              d="M7.35659 31.8002C6.45327 32.3669 6.45363 33.6922 7.35726 34.2583L14.9775 39.0324C15.9341 39.6316 17.1716 38.9383 17.1716 37.8031V28.2492C17.1716 27.1137 15.9334 26.4204 14.9769 27.0204L7.35659 31.8002Z"
-              fill="#EAE3FF"
-            />
-            <path
-              d="M15.5878 38.0583L7.96751 33.2843C7.7826 33.1684 7.78251 32.89 7.96738 32.774L15.5877 27.9941C15.765 27.8829 16.0222 28.0011 16.0222 28.2492V37.8031C16.0222 38.0512 15.7651 38.1694 15.5878 38.0583Z"
-              stroke="black"
-              stroke-opacity="0.2"
-              stroke-width="2.29892"
-            />
-            <path
-              d="M7.35659 47.4331C6.45327 47.9997 6.45363 49.325 7.35726 49.8912L14.9775 54.6652C15.9341 55.2644 17.1716 54.5711 17.1716 53.4359V43.8821C17.1716 42.7465 15.9334 42.0532 14.9769 42.6532L7.35659 47.4331Z"
-              fill="#B39FFB"
-            />
-            <path
-              d="M15.5878 53.6911L7.96751 48.9171C7.7826 48.8012 7.78251 48.5228 7.96738 48.4068L15.5877 43.627C15.765 43.5157 16.0222 43.6339 16.0222 43.8821V53.4359C16.0222 53.684 15.7651 53.8022 15.5878 53.6911Z"
-              stroke="black"
-              stroke-opacity="0.2"
-              stroke-width="2.29892"
-            />
-            <path
-              d="M30.3264 23.9841C31.2297 24.5507 31.2293 25.8761 30.3257 26.4422L22.7054 31.2162C21.7489 31.8155 20.5113 31.1221 20.5113 29.9869V20.4331C20.5113 19.2975 21.7496 18.6042 22.7061 19.2042L30.3264 23.9841Z"
-              fill="#B39FFB"
-            />
-            <path
-              d="M22.0952 30.2421L29.7155 25.4681C29.9004 25.3522 29.9005 25.0738 29.7156 24.9578L22.0953 20.178C21.918 20.0668 21.6608 20.1849 21.6608 20.4331V29.9869C21.6608 30.235 21.9179 30.3532 22.0952 30.2421Z"
-              stroke="black"
-              stroke-opacity="0.2"
-              stroke-width="2.29892"
-            />
-            <path
-              d="M30.3264 39.6166C31.2297 40.1833 31.2293 41.5086 30.3257 42.0747L22.7054 46.8488C21.7489 47.448 20.5113 46.7547 20.5113 45.6195V36.0656C20.5113 34.9301 21.7496 34.2368 22.7061 34.8368L30.3264 39.6166Z"
-              fill="#C6B7EC"
-            />
-            <path
-              d="M22.0952 45.8747L29.7155 41.1007C29.9004 40.9848 29.9005 40.7064 29.7156 40.5904L22.0953 35.8106C21.918 35.6993 21.6608 35.8175 21.6608 36.0656V45.6195C21.6608 45.8676 21.9179 45.9858 22.0952 45.8747Z"
-              stroke="black"
-              stroke-opacity="0.2"
-              stroke-width="2.29892"
-            />
-          </svg>
-        
+        <svg
+          class="input"
+          width="46"
+          height="59"
+          viewBox="0 0 46 59"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 18.3368C2 9.34203 11.402 2 23 2C34.598 2 44 9.34203 44 18.3368V29.5V40.6632C44 49.6858 34.598 57 23 57C11.402 57 2 49.6858 2 40.6632V29.5V18.3368Z"
+            fill="#CAE8F1"
+          />
+          <path
+            class="main-layer"
+            d="M44 18.3368C44 27.3316 34.598 34.6736 23 34.6736C11.402 34.6736 2 27.3316 2 18.3368M44 18.3368C44 9.34203 34.598 2 23 2C11.402 2 2 9.34203 2 18.3368M44 18.3368V29.5M2 18.3368V29.5M44 29.5C44 38.5226 34.598 45.8368 23 45.8368C11.402 45.8368 2 38.5226 2 29.5M44 29.5V40.6632C44 49.6858 34.598 57 23 57C11.402 57 2 49.6858 2 40.6632V29.5"
+            stroke="black"
+            stroke-width="3"
+          />
+        </svg>
 
+        <svg
+          class="convolution"
+          width="64"
+          height="64"
+          viewBox="0 0 64 64"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M62 27V59.5C62 60.8807 60.8807 62 59.5 62H27C25.6193 62 24.5 60.8807 24.5 59.5V54.5H19.5C18.1193 54.5 17 53.3807 17 52V47H12C10.6193 47 9.5 45.8807 9.5 44.5V39.5H4.5C3.11929 39.5 2 38.3807 2 37V32V4.5C2 3.11929 3.11929 2 4.5 2H32H37C38.3807 2 39.5 3.11929 39.5 4.5V9.5H44.5C45.8807 9.5 47 10.6193 47 12V17H52C53.3807 17 54.5 18.1193 54.5 19.5V24.5H59.5C60.8807 24.5 62 25.6193 62 27Z"
+            fill="#DBDCFF"
+          />
+          <path
+            class="main-layer"
+            d="M39.5 9.5H12C10.6193 9.5 9.5 10.6193 9.5 12V39.5M39.5 9.5H44.5C45.8807 9.5 47 10.6193 47 12V17M39.5 9.5V4.5C39.5 3.11929 38.3807 2 37 2H32H4.5C3.11929 2 2 3.11929 2 4.5V32V37C2 38.3807 3.11929 39.5 4.5 39.5H9.5M9.5 39.5V44.5C9.5 45.8807 10.6193 47 12 47H17M47 17H19.5C18.1193 17 17 18.1193 17 19.5V47M47 17H52C53.3807 17 54.5 18.1193 54.5 19.5V24.5M17 47V52C17 53.3807 18.1193 54.5 19.5 54.5H24.5M54.5 24.5H59.5C60.8807 24.5 62 25.6193 62 27V59.5C62 60.8807 60.8807 62 59.5 62H27C25.6193 62 24.5 60.8807 24.5 59.5V54.5M54.5 24.5H27C25.6193 24.5 24.5 25.6193 24.5 27V54.5"
+            stroke="black"
+            stroke-width="3"
+          />
+        </svg>
+
+        <svg
+          class="dropout"
+          width="56"
+          height="56"
+          viewBox="0 0 56 56"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            class="main-layer"
+            x="1.25"
+            y="1.25"
+            width="53.5"
+            height="53.5"
+            rx="5.75"
+            fill="#ECEDFF"
+            stroke="black"
+            stroke-width="3"
+          />
+          <rect
+            x="8"
+            y="8"
+            width="10.3219"
+            height="10.3219"
+            rx="2.68657"
+            fill="#6E56BC"
+          />
+          <rect
+            x="9"
+            y="9"
+            width="8.32193"
+            height="8.32193"
+            rx="1.68657"
+            stroke="black"
+            stroke-opacity="0.15"
+            stroke-width="2"
+          />
+          <rect
+            x="8"
+            y="22.8391"
+            width="10.3219"
+            height="10.3219"
+            rx="2.68657"
+            fill="#C6B7EC"
+          />
+          <rect
+            x="9"
+            y="23.8391"
+            width="8.32193"
+            height="8.32193"
+            rx="1.68657"
+            stroke="black"
+            stroke-opacity="0.15"
+            stroke-width="2"
+          />
+          <rect
+            x="8"
+            y="37.6777"
+            width="10.3219"
+            height="10.3219"
+            rx="2.68657"
+            fill="#9F8DDF"
+          />
+          <rect
+            x="9"
+            y="38.6777"
+            width="8.32193"
+            height="8.32193"
+            rx="1.68657"
+            stroke="black"
+            stroke-opacity="0.15"
+            stroke-width="2"
+          />
+          <rect
+            x="22.839"
+            y="8"
+            width="10.3219"
+            height="10.3219"
+            rx="2.68657"
+            fill="#EAE3FF"
+          />
+          <rect
+            x="23.839"
+            y="9"
+            width="8.32193"
+            height="8.32193"
+            rx="1.68657"
+            stroke="black"
+            stroke-opacity="0.15"
+            stroke-width="2"
+          />
+          <rect
+            x="22.839"
+            y="22.8391"
+            width="10.3219"
+            height="10.3219"
+            rx="2.68657"
+            fill="#EAE3FF"
+          />
+          <rect
+            x="23.839"
+            y="23.8391"
+            width="8.32193"
+            height="8.32193"
+            rx="1.68657"
+            stroke="black"
+            stroke-opacity="0.15"
+            stroke-width="2"
+          />
+          <rect
+            x="22.839"
+            y="37.6777"
+            width="10.3219"
+            height="10.3219"
+            rx="2.68657"
+            fill="#9F8DDF"
+          />
+          <rect
+            x="23.839"
+            y="38.6777"
+            width="8.32193"
+            height="8.32193"
+            rx="1.68657"
+            stroke="black"
+            stroke-opacity="0.15"
+            stroke-width="2"
+          />
+          <rect
+            x="37.678"
+            y="8"
+            width="10.3219"
+            height="10.3219"
+            rx="2.68657"
+            fill="#C6B7EC"
+          />
+          <rect
+            x="38.678"
+            y="9"
+            width="8.32193"
+            height="8.32193"
+            rx="1.68657"
+            stroke="black"
+            stroke-opacity="0.15"
+            stroke-width="2"
+          />
+          <rect
+            x="37.678"
+            y="22.8391"
+            width="10.3219"
+            height="10.3219"
+            rx="2.68657"
+            fill="#6E56BC"
+          />
+          <rect
+            x="38.678"
+            y="23.8391"
+            width="8.32193"
+            height="8.32193"
+            rx="1.68657"
+            stroke="black"
+            stroke-opacity="0.15"
+            stroke-width="2"
+          />
+          <rect
+            x="37.678"
+            y="37.6777"
+            width="10.3219"
+            height="10.3219"
+            rx="2.68657"
+            fill="#EAE3FF"
+          />
+          <rect
+            x="38.678"
+            y="38.6777"
+            width="8.32193"
+            height="8.32193"
+            rx="1.68657"
+            stroke="black"
+            stroke-opacity="0.15"
+            stroke-width="2"
+          />
+        </svg>
+
+        <svg
+          class="maxpool"
+          width="49"
+          height="49"
+          viewBox="0 0 49 49"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M47 26.3V45.2C47 46.1941 46.1941 47 45.2 47H26.3C25.3059 47 24.5 46.1941 24.5 45.2V35.75H15.05C14.0559 35.75 13.25 34.9441 13.25 33.95V24.5H3.8C2.80589 24.5 2 23.6941 2 22.7V3.8C2 2.80589 2.80589 2 3.8 2H22.7C23.6941 2 24.5 2.80589 24.5 3.8V13.25H33.95C34.9441 13.25 35.75 14.0559 35.75 15.05V24.5H45.2C46.1941 24.5 47 25.3059 47 26.3Z"
+            fill="#FFD2A8"
+          />
+          <path
+            class="main-layer"
+            d="M35.75 24.5H45.2C46.1941 24.5 47 25.3059 47 26.3V45.2C47 46.1941 46.1941 47 45.2 47H26.3C25.3059 47 24.5 46.1941 24.5 45.2V35.75M35.75 24.5V15.05C35.75 14.0559 34.9441 13.25 33.95 13.25H24.5M35.75 24.5H26.3C25.3059 24.5 24.5 25.3059 24.5 26.3V35.75M24.5 35.75H15.05C14.0559 35.75 13.25 34.9441 13.25 33.95V24.5M24.5 13.25H15.05C14.0559 13.25 13.25 14.0559 13.25 15.05V24.5M24.5 13.25V3.8C24.5 2.80589 23.6941 2 22.7 2H3.8C2.80589 2 2 2.80589 2 3.8V22.7C2 23.6941 2.80589 24.5 3.8 24.5H13.25"
+            stroke="black"
+            stroke-width="3"
+          />
+        </svg>
       </div>
 
       <section class="option-selection">
-        <h3>Prebuilt  -  Modules</h3>
+        <h3>Prebuilt - Modules</h3>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Similique aliquam reiciendis odit dicta et.</li>
+          <li>Eius quibusdam ipsam rerum eveniet adipisci?</li>
+          <li>Reprehenderit quae culpa pariatur dolore ducimus?</li>
+          <li>Nostrum quaerat soluta repudiandae inventore corporis!</li>
+          <li>Enim, perferendis? Maxime ducimus sapiente fuga.</li>
+          <li>Cupiditate voluptatibus facere amet perferendis sed!</li>
+          <li>Perspiciatis quibusdam explicabo maxime nisi voluptatem.</li>
+          <li>Nobis facere fugiat illum ea perspiciatis?</li>
+          <li>Eveniet quis expedita neque aliquid id?</li>
+          <li>Provident eos pariatur voluptatibus velit nihil!</li>
+          <li>Officiis autem ut velit libero nemo?</li>
+          <li>Repellendus iste sint voluptates non provident?</li>
+          <li>Praesentium ea corrupti repellendus cum assumenda.</li>
+          <li>Exercitationem voluptate totam consectetur error saepe!</li>
+        </ul>
       </section>
 
       <section class="training-status" class="svg-selection">
@@ -193,7 +382,6 @@
           </select>
         </div>
       </section>
-
     </main>
   </body>
 </html>
