@@ -6,7 +6,20 @@ DnD-ML is a highly accessible research and educational GUI tool to build your ML
 
 Visit the live demo of an earlier version of the front-end for the web-app [here](https://sashiku.github.io/dnd-ml/) <br>
 Visit the team-lead's repository for the most recent updates [here](https://github.com/coopersigrist/DnDML) (github.com/coopersigrist/DnDML)<br>
-✨  Migrating to React and Flask.
+✨  Migrating to React and Flask. <br><br>
+We have graphical components for the following: <br>
+- Layers: 
+  - Convolution
+  - Max-Pooling
+  - Batch Normalization
+  - Dropout
+  - Dense
+  - Flatten
+  - Concatenate
+- Activation:
+  - ReLU
+  - Sigmoid
+  - Tanh
 
 ## Acknowledgements: 
 * The user interface and drag and drop feature is _inspired_ by ENNUI - Elegant Neural Network User Interface 
