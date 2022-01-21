@@ -1,7 +1,7 @@
 # Drag and Drop Machine Learning Web Application
 
-Working under Cooper Sigrist at the Biologically Inspired Neural and Dynamical Systems (BINDS) Lab at Umass Amherst.<br> <br>
-DnD-ML is a highly accessible research and educational GUI tool to build your ML models.
+Working under Cooper Sigrist at the Biologically Inspired Neural and Dynamical Systems (BiNDS) Lab at Umass Amherst.<br> <br>
+DnD-ML is a research and educational web application with a highly accessible GUI to build your ML models.
 
 Design file of the components [here](https://www.figma.com/file/l4k2rBDlLm9zm0etAaqAqJ/DnD-ML-(components)?node-id=0%3A1) <br>
 Live demo of an ***earlier version*** of the front-end for the web-app [here](https://sashiku.github.io/dnd-ml/) <br>
