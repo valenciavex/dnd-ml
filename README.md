@@ -5,7 +5,7 @@ DnD-ML is a research and educational web application with a highly accessible GU
 
 Design file of the components [here](https://www.figma.com/file/l4k2rBDlLm9zm0etAaqAqJ/DnD-ML-(components)?node-id=0%3A1) <br>
 Live demo of an ***earlier version*** of the front-end for the web-app [here](https://sashiku.github.io/dnd-ml/) <br>
-Team-lead's repository for the most recent updates [here](https://github.com/coopersigrist/DnDML) (github.com/coopersigrist/DnDML)<br>
+Team-lead's repository for the most recent updates [here](https://github.com/coopersigrist/DnDML) (github.com/coopersigrist/DnDML) <br>
 ✨  Migrating to React and Flask. <br><br>
 We have graphical components for the following: <br>
 - Layers: 
